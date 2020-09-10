@@ -22,10 +22,6 @@ window.customElements.define('live-transcript',
         .stop{ 
           background-color: red;
         }
-
-        #transcript-window{
-          width: 50%;
-        }
       `;
       return style;
     }
