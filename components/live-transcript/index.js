@@ -62,6 +62,10 @@ window.customElements.define('live-transcript',
         let startStopButton = this.shadowRoot.querySelector('#start-stop');
         startStopButton.disabled = true;
       }else{
+        let startStopButton = this.shadowRoot.querySelector('#start-stop');
+        startStopButton.innerHTML = 'Stop Transcript';
+        startStopButton.classList.add('stop');
+
         this.recognition = new SpeechRecognition();
         this.recognition.continuous = true;
         this.recognition.interimResults = true;
